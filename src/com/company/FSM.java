@@ -13,9 +13,9 @@ public class FSM {
         Node currentNode = Start;
         for (String character : ABstring) {
             Boolean error = true;
-            for (Transmission possibleTransmission : (currentNode.getTransmissions())) {
-                if ( possibleTransmission.getRead() == character){
-                    currentNode = possibleTransmission.getEnd();
+            for (Transition possibleTransition : (currentNode.getTransition())) {
+                if ( possibleTransition.getRead() == character){
+                    currentNode = possibleTransition.getEnd();
                     nodeLocations.add(currentNode.getId());
                     error = false;
                     break;

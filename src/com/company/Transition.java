@@ -1,10 +1,10 @@
 package com.company;
 
-public class Transmission {
+public class Transition {
     private final String read;
     private final Node start;
     private final Node end;
-    public Transmission(String read, Node start, Node end){
+    public Transition(String read, Node start, Node end){
         this.read = read;
         this.start = start;
         this.end = end;
